@@ -14,6 +14,7 @@ RUN usermod -aG docker jenkins
 
 RUN pip install \
         awscli \
+        boto \
         docker-compose
 
 USER jenkins
