@@ -26,4 +26,6 @@ RUN pip install \
 
 RUN curl -o /usr/local/bin/aws-iam-authenticator https://amazon-eks.s3-us-west-2.amazonaws.com/1.11.5/2018-12-06/bin/linux/amd64/aws-iam-authenticator && chmod +x /usr/local/bin/aws-iam-authenticator
 
+RUN curl -L https://github.com/github/hub/releases/download/v2.11.1/hub-linux-amd64-2.11.1.tgz | tar -xz -C /usr/local --strip 1
+
 USER jenkins
