@@ -28,4 +28,6 @@ RUN curl -o /usr/local/bin/aws-iam-authenticator https://amazon-eks.s3-us-west-2
 
 RUN curl -L https://github.com/github/hub/releases/download/v2.11.1/hub-linux-amd64-2.11.1.tgz | tar -xz -C /usr/local --strip 1
 
+RUN curl -sL https://aka.ms/InstallAzureCLIDeb | bash
+
 USER jenkins
