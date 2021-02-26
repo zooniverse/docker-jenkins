@@ -22,6 +22,7 @@ RUN usermod -aG docker jenkins
 RUN pip install \
         awscli \
         boto \
+        pyrsistent==0.16.1 \
         docker-compose
 
 RUN curl -o /usr/local/bin/aws-iam-authenticator https://amazon-eks.s3-us-west-2.amazonaws.com/1.11.5/2018-12-06/bin/linux/amd64/aws-iam-authenticator && chmod +x /usr/local/bin/aws-iam-authenticator
